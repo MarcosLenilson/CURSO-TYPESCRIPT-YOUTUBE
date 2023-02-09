@@ -7,48 +7,48 @@
  * Transpilação do arquivo: <Windows> CTRL + SHIFT + B -> tsc: build/watch
  */
 
-// ==> Exemplo 01 - Uso simples de Tuplas em TypeScript
+==> Exemplo 01 - Uso simples de Tuplas em TypeScript
 
-// let pessoa: [string, string, number];
-// pessoa = ['Marcos Lenilson', 'Developer', 36];
-// // ? pessoa = [34, 'Cloud Advocate JavaScript', 'Glaucia Lemos'];
+let pessoa: [string, string, number];
+pessoa = ['Marcos Lenilson', 'Developer', 36];
+// ? pessoa = [34, 'Cloud Advocate JavaScript', 'Glaucia Lemos'];
 
-// console.log(pessoa);
+console.log(pessoa);
 
-// // ==> Exemplo 02 - Acessando o valor da Tupla
+// ==> Exemplo 02 - Acessando o valor da Tupla
 
-// let pessoa1: [string, string, number];
-// pessoa1 = ['Marcos Lenilson', 'Developer', 36];
+let pessoa1: [string, string, number];
+pessoa1 = ['Marcos Lenilson', 'Developer', 36];
 
-// console.log(pessoa1[1]);
+console.log(pessoa1[1]);
 
-// ==> Exemplo 03 - Outra forma de usar Tuplas em TypeScrit (com labels)
-// let pessoa2: [nome: string, posicao: string, idade: number] = ['Marcos Lenilson', 'Developer', 36];
+==> Exemplo 03 - Outra forma de usar Tuplas em TypeScrit (com labels)
+let pessoa2: [nome: string, posicao: string, idade: number] = ['Marcos Lenilson', 'Developer', 36];
 
-// console.log(pessoa2);
+console.log(pessoa2);
 
 
-// ==> Exemplo 04 - Usando Tuplas com Spread Operator
+==> Exemplo 04 - Usando Tuplas com Spread Operator
 
-// let listaFrutas: [string, ...string[]] = ['🍍', '🍊', '🍎', '🍉', '🥭'];
-// console.log(...listaFrutas);
+let listaFrutas: [string, ...string[]] = ['🍍', '🍊', '🍎', '🍉', '🥭'];
+console.log(...listaFrutas);
 
-//==> Exemplo 05 - Lista Heterogênea de Tupla:
+==> Exemplo 05 - Lista Heterogênea de Tupla:
 
-// let listaFrutas2: [number, boolean, ...string[]] = [5, true, ...listaFrutas];
+let listaFrutas2: [number, boolean, ...string[]] = [5, true, ...listaFrutas];
 
-// console.log(listaFrutas2);
+console.log(listaFrutas2);
 
-// ==> Exemplo 06 - Uso de função com Tuplas
+==> Exemplo 06 - Uso de função com Tuplas
 
-// function listarPessoas(nomes: string[], idades: number[]) {
-//     return [...nomes, ...idades];
-// }
+function listarPessoas(nomes: string[], idades: number[]) {
+    return [...nomes, ...idades];
+}
 
-// let resultado = listarPessoas(['Glaucia', 'Jurema'], [34, 68]);
-// console.log(resultado)
+let resultado = listarPessoas(['Glaucia', 'Jurema'], [34, 68]);
+console.log(resultado)
 
-// ==> Exemplo 07 - Labeled Tuples com Spread Operator numa função
+==> Exemplo 07 - Labeled Tuples com Spread Operator numa função
 
 type Nome = 
         | [primeiroNome: string, sobrenome: string]
