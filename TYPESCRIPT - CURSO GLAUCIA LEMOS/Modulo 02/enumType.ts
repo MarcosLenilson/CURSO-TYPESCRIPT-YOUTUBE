@@ -7,67 +7,67 @@
  * Transpilação do arquivo: <Windows> CTRL + SHIFT + B -> tsc: build/watch
  */
 
-// ==> Exemplo 01: Numeric Enums (Enums Numérico)
+//==> Exemplo 01: Numeric Enums (Enums Numérico)
 
-// enum Idioma {
-//   Portugues,
-//   Espanhol,
-//   Ingles,
-//   Japones
-//   Frances,
-// }
+enum Idioma {
+  Portugues,
+  Espanhol,
+  Ingles,
+  Japones
+  Frances,
+}
 
-// console.log(Idioma);
+console.log(Idioma);
 
 //==> Exemplo 02: String Enums
 
-//   enum Dia {
-//     Segunda,
-//     Terca,
-//     Quarta = 'QUA',
-//     Quinta = 'QUI',
-//     Sexta = 'SEX',
-//     Sabado = 'SAB',
-//     Domingo = 'DOM',
-//   }
+  enum Dia {
+    Segunda,
+    Terca,
+    Quarta = 'QUA',
+    Quinta = 'QUI',
+    Sexta = 'SEX',
+    Sabado = 'SAB',
+    Domingo = 'DOM',
+  }
 
-//   console.log(Dia);
+  console.log(Dia);
 
-// ==> Exemplo 03: Como podemos acessar um valor de um Enum com uma chave: (usando o const)
+//==> Exemplo 03: Como podemos acessar um valor de um Enum com uma chave: (usando o const)
 
-// const enum Comida {
-//   Hamburguer,
-//   Massa,
-//   Pizza,
-//   Torta,
-//   Churrasco,
-// }
+const enum Comida {
+  Hamburguer,
+  Massa,
+  Pizza,
+  Torta,
+  Churrasco,
+}
 
-// function comida(c: Comida) {
-//   return "Comidas muito apetitosas!";
-// }
+function comida(c: Comida) {
+  return "Comidas muito apetitosas!";
+}
 
-// console.log(comida(Comida.Pizza));
-// console.log(comida(Comida.Churrasco));
-// console.log(comida(5));
+console.log(comida(Comida.Pizza));
+console.log(comida(Comida.Churrasco));
+console.log(comida(5));
 
-// const enum Comida {
-//   Hambúrguer = "Hamburger",
-//   Massa = "Massa",
-//   Pizza = "Pizza",
-//   Torta = "Torta",
-//   Churrasco = "Churrasco",
-// }
+const enum Comida {
+  Hambúrguer = "Hamburger",
+  Massa = "Massa",
+  Pizza = "Pizza",
+  Torta = "Torta",
+  Churrasco = "Churrasco",
+}
 
-// function comida(c: Comida) {
-//    return 'Comidas muito apetitosas!';
-// }
+function comida(c: Comida) {
+   return 'Comidas muito apetitosas!';
+}
 
-// console.log(comida(Comida.Pizza));
-// console.log(comida(Comida.Churrasco));
-// console.log(comida(Comida.Torta));
+console.log(comida(Comida.Pizza));
+console.log(comida(Comida.Churrasco));
+console.log(comida(Comida.Torta));
 
-// // ==> Exemplo 04: Quando usar enum?!
+// ==> Exemplo 04: Quando usar enum?!
 
   enum Tarefa {
     Todo,
